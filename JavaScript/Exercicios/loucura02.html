@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Escritório</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+            background-color: rgb(156, 156, 156);
+        }
+        h1{
+            text-align: center;
+            color: chartreuse;
+        }
+        p{
+            margin: 30px;
+        }
+        label{
+            padding-right: 30px;
+        }
+        input{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solicitação de entrada no site:</h1>
+    <h2 id="fodase">Digite sua senha e prosiga</h2>
+    <p><label for="iNome" id="nominho">Nome:</label><input type="text" name="nNome" id="iNome"></p>
+    <p><label for="iSenha">Senha:</label><input type="password" name="nSenha" id="iSenha"></p>
+    <input type="button" value="Entrar" onclick="teste()">
+    <div id="res">resultado dessa merda</div>
+    <script>
+        function teste(){
+            var Nome = (window.document.querySelector("input#iNome").value)
+            var senha = window.document.querySelector("input#iSenha")
+            var res = window.document.querySelector("div#res")
+            var n2 = Number(senha.value)
+            if(Nome == "jayme" && n2 == 1234){
+                res.innerHTML = `Acesso Autorizado<br>`
+                res.innerText += `Bem Vindo ${Nome}`
+            }else{
+                res.innerHTML = "<strong> VAI TOMA NO CU</strong>"
+            }
+            
+        }
+    </script>
+</body>
+</html>

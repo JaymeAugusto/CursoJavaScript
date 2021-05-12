@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mudando as coias de cor Kralho</title>
+</head>
+<body>
+    <h1 id="sla" onclick="mudadecor">Olá eu vou mudar de cor se vc passar o mouse me mmimmmmm</h1>
+    <script>
+        var a = document.getElementById("sla")
+        a.addEventListener("click", mudadecor)
+        a.addEventListener("mouseenter", moveu)
+        a.addEventListener("mouseout", saiu)
+        function mudadecor(){
+            a.style.color = "red"
+        }
+        function moveu(){
+            a.style.color = "blue"
+            a.innerText = "Azulllllllllllllllllllllllllllllll"
+        }
+        function saiu(){
+            a.style.color = "black"
+            a.innerText = "Olá eu vou mudar de cor se vc passar o mouse me mmimmmmm"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ok vamos la</title>
+</head>
+<!-- <body>
+    <h1>Sistema de País</h1>
+   Seu nome: <input type="text" name="txtvel" id="txtvel">
+   <input type="button" value="verificar" onclick="calcular()">
+   <div id="res"></div>
+   <script>
+       function calcular(){
+        var vel = window.document.getElementById("txtvel")
+        var res = window.document.getElementById("res")
+        if(vel == 'jayme'){
+            res.innerHTML = `Vai toma o meio do meu cuuuuuuuuuuuuu`
+        }
+        res.innerHTML += `<p>Dirija sempre com o cinto de segurança</p>`
+       }
+   </script>
+</body> -->
+<body>
+    <h1>Pesquisa Pública</h1>
+    De que pais voce é: <input type="text" name="txtpa" id="txtpa">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id = 'res'></div>
+    <script>
+        function verificar(){
+            var txt = window.document.querySelector('input#txtpa')
+            var res = window.document.querySelector('div#res')
+            var pais = (txtpa.value)
+            res.innerHTML = `Você é do pais ${pais}<br>`
+            if (pais == 'Brasil' || pais == "brasil"){
+                res.innerHTML += 'Vocé e <strong>BRASILEIRO</strong>'      
+            }
+            else {
+                res.innerHTML += 'Você é <strong>ESTRANGEIRO</strong>'
+            }
+        }
+    </script>
+</body>
+</html>

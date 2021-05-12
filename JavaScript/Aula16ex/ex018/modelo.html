@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analizador de Números</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analizador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <p><label for="txtnum">Número: </label>
+            <input type="number" name="txtnum" id="txtnum">
+            <input type="button" value="inserir Número" onclick="adiciona()"></p>
+        </div>
+        <div>
+            <p><select name="txtselecao" id="txtselecao" size="5"></select></p>
+            <p><input type="button" value="Finalizar" onclick="finaliza()"></p>
+            <p id="txtfinaliza"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Jayme Augusto</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
